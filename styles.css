@@ -139,6 +139,15 @@ h1 { max-width: 620px; margin: 0; font-size: clamp(2rem, 5vw, 3.2rem); }
 
 .section { padding: 62px 0; scroll-margin-top: 90px; }
 .section-tint { background: var(--mint); }
+#services.section-tint {
+  background:
+    linear-gradient(rgba(32, 81, 59, .84), rgba(32, 81, 59, .84)),
+    url("images/Buda%20Castle%20Tour%2014.JPG") center / cover no-repeat;
+  color: #fff;
+}
+#services h2 { color: #fff; }
+#services .section-layout { display: block; }
+#services .service-list li { border-color: rgba(255, 255, 255, .25); }
 h2 { margin: 0 0 24px; font-size: 1.65rem; }
 
 .hours-list { margin: 0; }
