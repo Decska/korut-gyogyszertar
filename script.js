@@ -6,6 +6,13 @@ function setLanguage(language) {
     element.textContent = element.dataset[language];
   });
 
+  document.querySelectorAll("[data-hu-alt][data-en-alt]").forEach((element) => {
+    element.alt = element.dataset[`${language}Alt`];
+  });
+  document.querySelectorAll("[data-hu-title][data-en-title]").forEach((element) => {
+    element.title = element.dataset[`${language}Title`];
+  });
+
   document.title = document.querySelector("title").textContent;
 
   languageButtons.forEach((button) => {
